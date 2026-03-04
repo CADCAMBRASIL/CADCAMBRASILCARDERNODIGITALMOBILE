@@ -139,7 +139,21 @@
         // O Gabarito permanece o mesmo da versão Desktop
         const programasTreino = {
             1: {
-                descricao: "<b>Torneamento Externo:</b><br>1. Cabeçalho O0001.<br>2. Desbaste G71.<br>3. Troca em X200 Z200.",
+                descricao: `
+                    <b>Processo:</b> Desbaste e Acabamento Externo.<br>
+                    1. Aço 1020 - Material Bruto 52Ø 120mm De Comprimento.<br>
+                    2. Ferramentas: T0101 ; TNMG 160408/Desbaste e T0202 ; VCMT 160404/Acabamento.<br>
+                    3. VC: TNMG 160408 = 220 / VCMT 160404 = 250.<br>
+                    4. Rotação Maxima: Para Desbaste 2000 RPM / Para Acabamento 2500RPM.<br>
+                    5. AP: Para Desbaste 2mm No Raio.<br>
+                    6. Avanço: Para Desbaste 0.25 / Para Acabamento 0.12
+                    7. Posição Segura Para Troca De Ferramenta: X200 Z200.<br>
+                    8. Origem De Trabalho: G54.<br>
+                    9. Sobremetal Para Acabamento: No Eixo X = 1mm / No Eixo Z = 0.05mm.<br>
+                    10. Ciclo de Desbaste Longitudinal G71.<br>
+                    11. Ciclo De Acabamento G70.<br>
+                `,
+
                 linhas: [
                     { n: "N10", texto: "O[lacuna]", resp:["0001"], original: "O0001" },
                     { n: "N20", texto: "G[lacuna] G[lacuna] G[lacuna] G[lacuna]", resp:["21","40","90","95"], original: "G21 G40 G90 G95" },
@@ -274,4 +288,5 @@
         mudarExercicio(1);
     </script>
 </body>
+
 </html>
